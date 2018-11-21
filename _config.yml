@@ -19,7 +19,7 @@ title: Jekyll Social Network
 description: It is minimal and lazy!
 
 email: your-email@example.com
-baseurl: "/jekyll-social-network" # the subpath of your site, e.g. /blog
+baseurl: "/Jekyll-Social-Network" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: jekyllrb
