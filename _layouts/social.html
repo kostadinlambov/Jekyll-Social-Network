@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" type="text/css" />
+    <title>{{ site.title }}</title>
+</head>
+
+<body>
+    <header class="site-header">
+
+
+        <nav class="navigation main">
+            <div class="site-logo">
+                <a class="fas fa-user-secret" href="{{ site.baseurl }}/about/">SoftUni Logo</a>
+            </div>
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Bender</a></li>
+                <li><a href="{{ site.baseurl }}/about/">Home</a></li>
+            </ul>
+            <ul>
+                <li><a class="fas fa-newspaper" href="{{ site.baseurl }}/">Blog</a></li>
+                <li><a class="fas fa-user-secret" href="{{ site.baseurl }}/about/">About</a></li>
+                <li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="site-content">
+        {{content}}
+    </main>
+    <footer class="site-footer">
+
+    </footer>
+
+</body>
+
+</html>
