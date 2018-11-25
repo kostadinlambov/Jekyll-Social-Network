@@ -1,0 +1,215 @@
+@import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
+html {
+    box-sizing: border-box;
+    background: rgb( 59, 89, 152);
+    font: 16px/1.5 "Helvetica", sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+
+body {
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 2rem;
+    border: 1px solid black;
+    
+    color: white;
+}
+
+/* header */
+
+.nav-main {
+    
+}
+
+header .nav-main{
+    /* margin: 0.5rem; */
+    /* padding: 1rem; */
+    background: rgb( 59, 89, 152);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .nav-links-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .nav-links-container {
+    flex: 0 0 50%;
+}
+
+
+header .nav-ul-container, .nav-site-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    /* flex: 0 0 30%; */
+    /* margin: 0 1rem; */
+}
+
+header .nav-site-logo {
+    text-align: center;
+    padding-right: 1rem;
+    flex: 0 0 10%;
+}
+
+header .nav-site-logo {
+    display: block;
+    content: '';
+    /* border-right: 1px solid black; */
+    /* padding-right: 1rem;  */
+}
+
+header .nav-ul-container {
+    flex: 0 0 50%;
+    /* margin: 0 1rem; */
+}
+
+header .nav-first-ul, .nav-second-ul {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    /* margin: 0 1rem; */
+}
+
+header .nav-first-ul {
+    flex: 0 0 50%;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    /* padding-right: 0.1rem; */
+    padding: 0 1rem;
+}
+
+/* header .nav-first-ul:after {
+    display: block;
+    content: '';
+    border-right: 5px solid black;
+    padding-right: 0.1rem;
+} */
+
+header .nav-second-ul {
+    flex: 0 0 30%;
+    margin: 0 1rem;
+}
+
+header ul li {
+    list-style: none outside;
+    padding: 0.2rem 0;
+    margin: 0 0.5rem;
+}
+header .nav-first-ul li{
+
+    margin: 0 0.8rem;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header .nav-searchbar-container{
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+.nav-search{
+    outline: none;
+    border: none;
+    color: white;
+    background: rgb( 59, 89, 152);
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+    padding: 0.3rem;
+    /* border-radius: 5px; */
+}
+
+
+
+.nav-search-icon{
+    padding-right: 0.5rem;
+}
+
+/* header-section */
+header .header-section{
+    background: url("images/cover_MI-28-NE.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    /* width: 80%; */
+    /* margin: auto; */
+}
+
+header .header-section{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+header .header-container{
+    padding-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+}
+
+header .img-container{
+    width: 10rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    /* box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.3); */
+}
+
+header .img-container:before{
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+header img{
+    display: block;
+    position: absolute;
+    top:0; left: 0;
+    width: auto;
+    /* height: 100%; */
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
