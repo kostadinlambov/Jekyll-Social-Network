@@ -28,20 +28,64 @@ $breakpoints: (
 	}
 }
 
+// ###############################################
 
-// New media queries
+// My new media queries
 
-// @media screen and (max-width: 650px) {
-//     main .aside-section {
-//         flex: 1 1 32%;
-//         margin: 0 auto;
+@media screen and (max-width: 650px) {
 
-//     }
+    /* header */
+    header .header-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-//     main .main-section {
-//         flex: 1 1 60%;
-//         margin: 0 auto;
+    header .header-container{
+        text-align: center;
+    }
 
-//     }
+    main{
+        /* display: block;
+        width: 100%; */
+    }
 
-// }
+    main .aside-section {
+        flex: 1 0 100%;
+        /* width: 100%; */
+        margin: auto;
+
+    }
+
+    main .main-section {
+        flex: 1 0 100%;
+         /* width: 100%; */
+        margin: auto; 
+        
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+   
+
+    main .aside-article-intro, 
+    main .article-friends, 
+    main .aside-article-photos {
+        margin-bottom: 0;
+    }
+
+    main .aside-article-photos, 
+    main .aside-article-friends{
+        padding: 0;
+    }
+
+    main .aside-article-header {
+        padding: 1rem 0 0 1rem;
+    }
+
+
+
+}

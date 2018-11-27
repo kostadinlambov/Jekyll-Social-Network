@@ -11,34 +11,45 @@
 </head>
 
 <body>
+
+    <input type="checkbox" name="main-nav-toggle" id="main-nav-toggle">
+
+
     <header class="site-header">
-        <nav class="nav-main">
-            <div class="nav-links-container">
-                <div class="nav-site-logo">
-                    <a class="fab fa-facebook-square" href="{{ site.baseurl }}/about/"></a>
+
+        <section class="navbar-section">
+
+            <div class="navbar-wrapper">
+
+                <div class="nav-searchbar-container">
+                    <p class="site-logo">
+                        <a class="fab fa-facebook-square" href="{{ site.baseurl }}/about/"></a>
+                    </p>
+                    <p class="nav-search-icon">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </p>
+                    <label class="nav-search-label">
+                        <input type="text" class="nav-search" placeholder="Search...">
+                        <!-- <span class="close-icon"><i class="fas fa-times"></i></span> -->
+                    </label>
                 </div>
-                <div class="nav-ul-container">
-                    <ul class="nav-first-ul">
+
+                <label id="toggle" for="main-nav-toggle"><span>Menu</span></label>
+                
+
+                <nav class="nav-main">
+                    <ul class="nav-ul">
+                       
                         <li><a href="{{ site.baseurl }}/">Bender</a></li>
                         <li><a href="{{ site.baseurl }}/about/">Home</a></li>
-                    </ul>
-                    <ul class="nav-second-ul">
                         <li><a class="fas fa-user-friends" href="{{ site.baseurl }}/"></a></li>
                         <li><a class="fas fa-comments" href="{{ site.baseurl }}/about/"></a></li>
                         <li><a class="fas fa-bell" href="{{ site.baseurl }}/contacts/"></a></li>
                     </ul>
-                </div>
+                </nav>
+
             </div>
-            <div class="nav-searchbar-container">
-                <div class="nav-search-icon">
-                    <i class="fas fa-search"></i>
-                </div>
-                <label class="nav-search-label">
-                    <input type="text" class="nav-search" placeholder="Search...">
-                    <!-- <span class="close-icon"><i class="fas fa-times"></i></span> -->
-                </label>
-            </div>
-        </nav>
+        </section>
         <section class="header-section">
             <!-- <section class="card">
                 <div class="media">
