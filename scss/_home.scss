@@ -176,14 +176,12 @@ header .nav-searchbar-container {
     } */
 }
 
-
-
 /* header-section */
 
 $baseurl: "/Jekyll-Social-Network";
 header .header-section {
     // background: $header-img;
-    background: url("#{$baseurl}/images/cover_MI_28_NE.jpg");
+    background: url("#{$baseurl}/assets/images/cover_MI_28_NE.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
