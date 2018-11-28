@@ -1,6 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
 
-@import url("responsive.css");
+// @import url("responsive.css");
 
 html {
     box-sizing: border-box;
@@ -93,7 +93,7 @@ header a {
 header .nav-searchbar-container {
     flex: 0 0 30%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     /* padding: 1rem; */
 }
@@ -180,8 +180,10 @@ header .nav-searchbar-container {
 
 /* header-section */
 
+$baseurl: "/Jekyll-Social-Network";
 header .header-section {
-    background: url("images/cover_MI-28-NE.jpg");
+    // background: $header-img;
+    background: url("#{$baseurl}/images/cover_MI_28_NE.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -748,5 +750,5 @@ main .comment-input:after {
     padding-right: 2rem;
     margin: 0 1rem;
 
-    width: 97%
+    width: 80%
 }

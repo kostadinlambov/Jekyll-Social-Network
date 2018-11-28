@@ -1,38 +1,48 @@
-$breakpoints: (
-	"phone": 400px,
-	"phone-wide": 480px,
-	"phablet": 560px,
-	"tablet-small": 640px,
-	"tablet": 768px,
-	"tablet-wide": 1024px,
-	"desktop": 1248px,
-	"desktop-wide": 1440px
-);
+// $breakpoints: (
+// 	"phone": 400px,
+// 	"phone-wide": 480px,
+// 	"phablet": 560px,
+// 	"tablet-small": 640px,
+// 	"tablet": 768px,
+// 	"tablet-wide": 1024px,
+// 	"desktop": 1248px,
+// 	"desktop-wide": 1440px
+// );
 
-@mixin mq($width, $type: min) {
-	@if map_has_key($breakpoints, $width) {
+// @mixin mq($width, $type: min) {
+// 	@if map_has_key($breakpoints, $width) {
 
-		$width: map_get($breakpoints, $width);
+// 		$width: map_get($breakpoints, $width);
 
-		@if $type == max {
-			$width: $width - 1px;
-		}
+// 		@if $type == max {
+// 			$width: $width - 1px;
+// 		}
 
-		$parent: &;
+// 		$parent: &;
 
-		@media only screen and (#{$type}-width: $width) {
-			@at-root #{$parent} {
-				@content;
-			}
-		}
-	}
-}
+// 		@media only screen and (#{$type}-width: $width) {
+// 			@at-root #{$parent} {
+// 				@content;
+// 			}
+// 		}
+// 	}
+// }
 
 // ###############################################
 
 // My new media queries
 
 @media screen and (max-width: 650px) {
+
+    html {
+        font: 10px/1.5 "Helvetica", sans-serif;
+    }
+
+
+    body{
+        display: block;
+        width: 100%;
+    }
 
     /* header */
     header .header-container{
@@ -49,26 +59,31 @@ $breakpoints: (
         /* display: block;
         width: 100%; */
     }
-
-    main .aside-section {
-        flex: 1 0 100%;
-        /* width: 100%; */
-        margin: auto;
-
-    }
-
-    main .main-section {
-        flex: 1 0 100%;
-         /* width: 100%; */
-        margin: auto; 
-        
-    }
-
     main {
+        display: block;
         width: 100%;
         margin: auto;
         padding: 0;
     }
+
+    main .aside-section {
+        flex: 0 0 100%;
+        /* width: 100%; */
+        /* margin: auto; */
+        display: block;
+        width: 100%;
+
+    }
+
+    main .main-section {
+        flex: 0 0 100%;
+         /* width: 100%; */
+        /* margin: auto;  */
+        display: block;
+        
+    }
+
+    
    
 
     main .aside-article-intro, 

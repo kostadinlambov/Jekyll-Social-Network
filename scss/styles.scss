@@ -1,13 +1,14 @@
 
-$fa-font-path: '../fontawesome/webfonts';
+// $fa-font-path: '../fontawesome/webfonts';
 
 // @import '../fontawesome/scss/fontawesome';
 // @import '../fontawesome/scss/brands';
 // @import '../fontawesome/scss/regular';
 // @import '../fontawesome/scss/solid';
 
+@import 'home';
+@import 'responsive';
 // @import 'mixins';
-// @import 'responsive';
 // @import 'variables';
 // @import 'reset';
 // @import 'animations';
@@ -19,8 +20,7 @@ $fa-font-path: '../fontawesome/webfonts';
 // @import 'navigation';
 
 // @import 'listing';
-@import 'home';
 
-@import 'site-header';
+// @import 'site-header';
 // @import 'site-footer';
  
