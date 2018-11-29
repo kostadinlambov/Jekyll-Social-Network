@@ -6,11 +6,14 @@
 // @import '../fontawesome/scss/regular';
 // @import '../fontawesome/scss/solid';
 
-@import 'home';
-@import 'responsive';
+
 // @import 'mixins';
 // @import 'variables';
-// @import 'reset';
+@import 'reset';
+@import 'home';
+@import 'responsive';
+
+
 // @import 'animations';
 // @import 'typography';
 // @import 'forms';

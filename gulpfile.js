@@ -35,6 +35,8 @@ gulp.task('jekyll', function () {
 	});
 });
 
+
+
 // jekyll serve
 gulp.task('serve', function() {
 	
@@ -58,3 +60,19 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', ['scss','jekyll','serve']);
+
+// SCSS + build 
+
+gulp.task('build', function () {
+	require('child_process').exec('bundle exec jekyll build', {stdio: 'inherit'}, function(){
+		browserSync.reload();
+	});
+});
+
+// gulp.task('serveNew', function () {
+// 	require('child_process').exec('bundle exec jekyll serve', {stdio: 'inherit'}, function(){
+// 		browserSync.reload();
+// 	});
+// });
+
+gulp.task('defaultGit', ['scss','build']);
