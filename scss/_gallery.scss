@@ -1,4 +1,4 @@
-.grid-container{
+.grid-container {
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: space-between;
@@ -9,6 +9,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
 }
+
 
 .grid-container li {
     flex: 0 1 33%;
@@ -52,6 +53,9 @@
     width: auto;
     height: 100%;
     background: white;
+
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 
     position: absolute;
     top: 50%;
