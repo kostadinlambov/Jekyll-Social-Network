@@ -31,7 +31,7 @@ $headings: (h1: 2.441em, h2: 1.953em, h3: 1.563em, h5: 1em, h6: 1em);
 
 h5, h6 { font-weight: bold; }
 
-p, ol {
+ol {
 	padding-bottom: 1.5em;
 }
 
@@ -41,4 +41,13 @@ ol {
 
 li {
 	list-style-position: inside;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(192, 192, 192);
+}
+
+a:hover {
+	color: white;
 }

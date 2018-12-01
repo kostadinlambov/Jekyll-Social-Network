@@ -87,8 +87,13 @@ header ul.nav-ul li {
 
 header a {
     text-decoration: none;
-    color: white;
+    // color: white;
 }
+
+header a:hover{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
 
 header .nav-searchbar-container {
     flex: 0 0 30%;
@@ -144,6 +149,8 @@ header .nav-search-div input {
     display: block;
     font-weight: 900;
 }
+
+
 
 
 @media screen and (max-width: 800px) {
@@ -265,27 +272,6 @@ header .header-button-container button {
     margin: 0.3rem;
     font-size: 1.1rem;
 }
-
-/* image */
-
-/* .card .media {
-    position: relative;
-    overflow: hidden;
-}
-
-.card .media:after {
-    display: block;
-    content: '';
-    padding-top: 56.25%;
-}
-
-.card .media img {
-    display: block;
-    position: absolute;
-    left: 0; right:0;
-    width: 100%;
-    height: auto; 
-} */
 
 /* main */
 
@@ -526,6 +512,20 @@ main .main-article-header ul li a {
     padding-bottom: 0;
 
 }
+
+// .active {
+//     color: rgb(64, 163, 244);
+// }
+
+
+// .active:hover{
+//     color: white;
+//     background: rgb(64, 163, 244);
+//     border-radius: 5px;
+//     border: 1px solid white;
+//     box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.3);
+//     z-index: 5;
+// }
 
 
 
