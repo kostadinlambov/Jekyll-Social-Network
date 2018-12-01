@@ -32,6 +32,40 @@
 
 // My new media queries
 
+@media screen and (max-width: 900px) {
+    main {
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    main .aside-section {
+        flex: 0 0 100%;
+        /* width: 100%; */
+        /* margin: auto; */
+        display: block;
+        width: 100%;
+        margin-top: 0;
+
+    }
+
+    main .main-section {
+        flex: 0 0 100%;
+         /* width: 100%; */
+        /* margin: auto;  */
+        display: block;
+        
+    }
+
+    main .main-article-header nav {
+        margin: -4px auto 0;
+        
+    }
+}
+
+
+
 @media screen and (max-width: 690px) {
 
     html {
@@ -83,34 +117,34 @@
         /* display: block;
         width: 100%; */
     }
-    main {
-        display: block;
-        width: 100%;
-        margin: auto;
-        padding: 0;
-    }
+    // main {
+    //     display: block;
+    //     width: 100%;
+    //     margin: auto;
+    //     padding: 0;
+    // }
 
-    main .aside-section {
-        flex: 0 0 100%;
-        /* width: 100%; */
-        /* margin: auto; */
-        display: block;
-        width: 100%;
+    // main .aside-section {
+    //     flex: 0 0 100%;
+    //     /* width: 100%; */
+    //     /* margin: auto; */
+    //     display: block;
+    //     width: 100%;
 
-    }
+    // }
 
-    main .main-section {
-        flex: 0 0 100%;
-         /* width: 100%; */
-        /* margin: auto;  */
-        display: block;
+    // main .main-section {
+    //     flex: 0 0 100%;
+    //      /* width: 100%; */
+    //     /* margin: auto;  */
+    //     display: block;
         
-    }
+    // }
 
-    main .main-article-header nav {
-        margin: -4px auto 0;
+    // main .main-article-header nav {
+    //     margin: -4px auto 0;
         
-    }
+    // }
    
     // main .main-article-header ul {
     //     box-shadow:none;
