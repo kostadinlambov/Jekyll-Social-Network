@@ -47,14 +47,27 @@ header ul.nav-ul li {
     padding: 1rem;
 }
 
+// header ul.nav-ul li:after {
+//     display: block;
+//     content: '';
+// } 
+
+// header ul.nav-ul li:hover:after {
+//     border-bottom: 1px solid white;
+//     width: 97%;
+//     margin: auto;
+// }
+
 
 header a {
     text-decoration: none;
-    // color: white;
 }
 
-header a:hover {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+header li>a:hover,
+header div>a:hover{
+    // text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid white;
+    padding-bottom: 0.2rem;
 }
 
 
