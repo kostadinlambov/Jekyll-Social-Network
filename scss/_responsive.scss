@@ -1,36 +1,5 @@
-// $breakpoints: (
-// 	"phone": 400px,
-// 	"phone-wide": 480px,
-// 	"phablet": 560px,
-// 	"tablet-small": 640px,
-// 	"tablet": 768px,
-// 	"tablet-wide": 1024px,
-// 	"desktop": 1248px,
-// 	"desktop-wide": 1440px
-// );
 
-// @mixin mq($width, $type: min) {
-// 	@if map_has_key($breakpoints, $width) {
 
-// 		$width: map_get($breakpoints, $width);
-
-// 		@if $type == max {
-// 			$width: $width - 1px;
-// 		}
-
-// 		$parent: &;
-
-// 		@media only screen and (#{$type}-width: $width) {
-// 			@at-root #{$parent} {
-// 				@content;
-// 			}
-// 		}
-// 	}
-// }
-
-// ###############################################
-
-// My new media queries
 
 @media screen and (max-width: 900px) {
     main {
@@ -61,6 +30,12 @@
     main .main-article-header nav {
         margin: -4px auto 0;
         
+    }
+
+    main .article-friends, 
+    main .aside-article-intro, 
+    main .aside-article-photos{
+        margin-bottom: 0;
     }
 }
 
@@ -113,42 +88,7 @@
 
     // main
 
-    main{
-        /* display: block;
-        width: 100%; */
-    }
-    // main {
-    //     display: block;
-    //     width: 100%;
-    //     margin: auto;
-    //     padding: 0;
-    // }
-
-    // main .aside-section {
-    //     flex: 0 0 100%;
-    //     /* width: 100%; */
-    //     /* margin: auto; */
-    //     display: block;
-    //     width: 100%;
-
-    // }
-
-    // main .main-section {
-    //     flex: 0 0 100%;
-    //      /* width: 100%; */
-    //     /* margin: auto;  */
-    //     display: block;
-        
-    // }
-
-    // main .main-article-header nav {
-    //     margin: -4px auto 0;
-        
-    // }
    
-    // main .main-article-header ul {
-    //     box-shadow:none;
-    // }
    
     main .main-article-shared-content-header{
         box-shadow:none;
@@ -175,4 +115,12 @@
     }
 
 
+}
+
+@media screen and (max-width: 400px) {
+
+    header .site-logo{
+        padding-right: 1rem;
+    }
+    
 }

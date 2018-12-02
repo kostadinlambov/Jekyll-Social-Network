@@ -37,34 +37,16 @@
 
 
 .grid-container li {
-    // flex: 0 1 33%;
-    /* height: 50px; */
-    /* width: 30%; */
     list-style: none outside;
-    // padding-left: 0;
-    // margin: 1px 0;
-
-    /* Center images */
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
     overflow: hidden;
-    /* border: 1px solid black; */
-    // box-shadow: 0 0 5rem 0.9rem rgba(#000, 0.2);
     box-shadow: 0px 0px 12px 2px rgba(64, 163, 244, 0.2);
-   
     transition: all 1.5s ease-in-out;
-    // transition: transform .8s ease-out;
-  
 }
 
 .grid-container li:hover {
     transform: scale(1.05);
     z-index: 100;
-    // border: 1px solid rgb(59, 89, 152);
-    // box-shadow: inset 0 0 10px #000000;
-    // transition: opacity 0.3s ease-in;
-    // box-shadow: 0 0 5rem 0.9rem rgba(#000, 0.4);
+ 
     box-shadow:  var(--blue-box-shadow);
 }
 

@@ -7,7 +7,8 @@ section.about-wrapper {
 
 
 section.personal-info {
-    flex: 0 0 34%;
+    // flex: 0 0 34%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -16,7 +17,8 @@ section.personal-info {
 }
 
 section.hobbies-education-wrapper {
-    flex: 0 0 60%;
+    // flex: 0 0 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -44,7 +46,7 @@ section.education-and-employement {
 }
 
 article.personal-info-article,
-article.hobbies-and-interests-article, 
+article.hobbies-and-interests-article,
 article.education-and-employement-article {
     padding: 24px;
 }
@@ -86,31 +88,31 @@ article.education-and-employement-article {
     border-bottom: 1px solid silver;
 }
 
-.social-wrapper > button{
+.social-wrapper>button {
     width: 100%;
 }
 
-.social-wrapper > button.button-twitter{
+.social-wrapper>button.button-twitter {
     width: 100%;
-    background: rgb( 124, 90, 194)
+    background: rgb(124, 90, 194)
 }
 
-.social-wrapper > button.button-dribbble{
+.social-wrapper>button.button-dribbble {
     width: 100%;
-    background: rgb( 248, 91, 142)
+    background: rgb(248, 91, 142)
 }
 
 
-.social-wrapper > button > i{
-        padding-right: 5px;
+.social-wrapper>button>i {
+    padding-right: 5px;
 }
 
-.social-wrapper > button.button-twitter:hover,
-.social-wrapper > button.button-dribbble:hover {
-	background: rgb(64, 163, 244);
-	color: white;
-	border: 1px solid white;
-	box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.3);
+.social-wrapper>button.button-twitter:hover,
+.social-wrapper>button.button-dribbble:hover {
+    background: rgb(64, 163, 244);
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -123,13 +125,14 @@ article.education-and-employement-article {
 //#############################
 // section.hobbies-and-interests
 
-article.hobbies-and-interests-article{
+article.hobbies-and-interests-article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: flex-start;
 }
-.column-wrapper-second-section{
+
+.column-wrapper-second-section {
     flex: 1 1 49%;
     display: flex;
     flex-direction: column;
@@ -138,7 +141,7 @@ article.hobbies-and-interests-article{
 
 }
 
-.info-category-second-section{
+.info-category-second-section {
     display: flex;
     flex-direction: column;
     // justify-content: flex-start;
@@ -149,13 +152,14 @@ article.hobbies-and-interests-article{
 //##################################
 // section.education-and-employement
 
-article.education-and-employement-article{
+article.education-and-employement-article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: flex-start;
 }
-.column-wrapper-second-section{
+
+.column-wrapper-second-section {
     flex: 1 1 49%;
     display: flex;
     flex-direction: column;
@@ -164,7 +168,7 @@ article.education-and-employement-article{
 
 }
 
-.info-category-second-section{
+.info-category-second-section {
     display: flex;
     flex-direction: column;
     // justify-content: flex-start;
@@ -172,6 +176,30 @@ article.education-and-employement-article{
     padding: 15px 0;
 }
 
-p.duration{
+p.duration {
     margin-bottom: 15px;
 }
+
+
+
+@media screen and (max-width: 900px) {}
+
+
+
+@media screen and (max-width: 600px) {
+
+    section.hobbies-and-interests{
+        margin-bottom: 0;
+    }
+
+
+    article.education-and-employement-article,
+    article.hobbies-and-interests-article {
+        flex-direction: column;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 400px) {}
