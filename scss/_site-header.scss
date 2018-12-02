@@ -214,8 +214,11 @@ header .img-container {
 header .img-container:before {
     display: block;
     content: '';
+    // content: attr(data-attr);
     padding-top: 100%;
 }
+
+
 
 header .header-container .img-container img {
     display: block;
@@ -231,12 +234,14 @@ header .header-container .img-container img {
     transform: translate(-50%, -50%);
 }
 
+
+
 header .header-content {
     margin: 2rem;
 }
 
 header .header-content h2 {
-    font-size: 2.8rem;
+    // font-size: 2.8rem;
     /* font-weight: 400; */
 }
 

@@ -114,6 +114,17 @@
         // border: 1px solid rgb(64, 163, 244);
         width: 50%;
     }
+
+    .main-article-header ul li a:hover{
+        color: rgb(64, 163, 244);
+        background: white;
+        border-radius: none;
+        border:none;
+        box-shadow: none;
+        z-index: 5;
+    }
+    
+
 }
 
 // @media screen and (max-width: 600px) {
